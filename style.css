@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Roboto");
+
+Les autres import/url ont été créer pour chaque file du components mais malheureusement, le CSS ne s'affichait pas 
+sur Github lorsque j'ai créé précédemment le folder components avec un file pour chaque parties du site.
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8f1 ;
+  color: black;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+  text-align: justify;
+}
+
+@media (max-width : 760px) {
+  .container{
+    width: 600px;
+  }
+}
+
+@media (max-width : 500px) {
+  .container{
+    width: 400px;
+  }
+}
+
+.card img {
+  width: 150px;
+  border-radius: 6px;
+}
+Remarque : je n'ai pas pu poster sur Github mon CSS de façon organisé avec un file Components car Github ne les accepte pas 
+et n'arrivait pas à afficher mon CSS. J'ai du donc tout mettre dans le meme file CSS sous peine de ne pas pouvoir 
+vous envoyer mon travail. Merci pour votre compréhension.
+
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  align-content: center;
+}
+
+.banner {
+  background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%), url("images/background.jpg");
+  color: white;
+  padding: 150px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  font-size: 50px;
+}
+
+.banner h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.btn-blue {
+  background-color: black;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-blue:hover {
+  background-color: #6259FF;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin: 10px;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
